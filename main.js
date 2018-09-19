@@ -24,7 +24,7 @@ students.forEach(student => {
           <div class="card-body">
             <h5 class="card-title">${"Username: "+json.login}</h5>
             <p class="card-text">${"Bio: " + (json.bio || "Not Available Yet")}</p>
-            <p class="card-text">${"Location: " + (json.location || "Not Available Yet")}</p>
+            <p class="card-text">${"Location: " + (json.location || "Not Available")}</p>
             <a target="_blank" href="${json.html_url}" class="btn btn-primary">Visit URL</a>
           </div>
         </div>
