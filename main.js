@@ -22,9 +22,10 @@ students.forEach(student => {
         <div class="card" >
           <img class="card-img-top" src=${json.avatar_url || "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225358/Pug-On-White-01.jpg"} alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">${json.login}</h5>
-            <p class="card-text">${json.location || "NOT ON THIS PLANET"}</p>
-            <a target="_blank" href="${json.html_url}" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">${"Username: "+json.login}</h5>
+            <p class="card-text">${"Bio: " + (json.bio || "Not Available Yet")}</p>
+            <p class="card-text">${"Location: " + (json.location || "Not Available Yet")}</p>
+            <a target="_blank" href="${json.html_url}" class="btn btn-primary">Visit URL</a>
           </div>
         </div>
       </div>
